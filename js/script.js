@@ -5,14 +5,25 @@
 // const { active } = require("browser-sync");
 
 //   });
+
 const titleClickHandler = function(event){
     console.log('Link was clicked!');
-    console.log(event);
+    console.log('links:', event);
     /* remove class 'active' from all article links  */
+    const activeLinks = document.querySelectorAll('.titles a.active');
+
+        for(let activeLink of activeLinks){
+            activeLink.classList.remove('active');
+        }
   
     /* add class 'active' to the clicked link */
   
     /* remove class 'active' from all articles */
+    const activeArticles = document.querySelectorAll('.content .active');
+
+        for(let activeArticle of activeArticles){
+            activeArticle.classPost.remove('active');
+        }
   
     /* get 'href' attribute from the clicked link */
   
