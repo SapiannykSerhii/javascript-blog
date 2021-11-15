@@ -5,7 +5,6 @@
 // const { active } = require("browser-sync");
 
 //   });
-
 const titleClickHandler = function(event){
     const clickedElement = this;
     event.preventDefault();
@@ -34,11 +33,11 @@ const titleClickHandler = function(event){
     const articleSelector = clickedElement.getAttribute('href');
         console.log(articleSelector);
   
-    /*[IN PROGRES] find the correct article using the selector (value of 'href' attribute) */
+    /*[DONE] find the correct article using the selector (value of 'href' attribute) */
     const targetArticle = document.querySelector(articleSelector);
         console.log(targetArticle);  
   
-    /*[IN PROGRESS]add class 'active' to the correct article */
+    /*[DONE]add class 'active' to the correct article */
     targetArticle.classList.add('active')
 
 
@@ -47,3 +46,44 @@ const titleClickHandler = function(event){
     for(let link of links){
         link.addEventListener('click', titleClickHandler);
   }
+
+
+  const optArticleSelector = '.post',
+        optTitleSelector = '.post-title',
+        optTitleListSelector = '.titles';
+
+
+function generateTitleLinks(){
+
+  /*[DONE] remove contents of titleList */
+ const titleList = document.querySelector(optTitleListSelector);
+    console.log(titleList);
+    function clearMessages(){
+        titleList.innerHTML = '';
+    }
+
+
+  /*[DONE] for each article */
+const articles = document.querySelectorAll(optArticleSelector);
+  console.log(articles);
+  for (let article of articles) {
+    console.log(article);
+  }
+
+    /*[GET PROGRESS] get the article id */
+const articleId = article.getAttribute('id');
+    console.log(articleId);
+
+
+    /* find the title element */
+
+
+    /* get the title from the title element */
+
+    /* create HTML of the link */
+
+    /* insert link into titleList */
+
+
+}
+generateTitleLinks();
