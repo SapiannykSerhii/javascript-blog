@@ -5,6 +5,9 @@
 // const { active } = require("browser-sync");
 
 //   });
+{
+    'use strict';
+    
 const titleClickHandler = function(event){
     const clickedElement = this;
     event.preventDefault();
@@ -96,3 +99,4 @@ const links = document.querySelectorAll('.titles a');
     for(let link of links){
         link.addEventListener('click', titleClickHandler);
   }
+}
