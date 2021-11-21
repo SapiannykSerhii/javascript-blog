@@ -132,3 +132,36 @@ body {
     margin: 0 10px 0 0;
   }
 }
+.list.tags {
+  li {
+    display: inline;
+    padding: 3px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.tag-size-10 {
+  color: red;
+  font-size: 150%;
+}
+.tag-size-8 {
+
+  color: rgba(29, 201, 121, 0.767);
+  font-size: 120%;
+
+}
+.tag-size-6 {
+  color: #2665ece3;
+  font-size: 100%;
+}
+
+.tag-size-2 {
+  color: #2665ece3;
+  font-size: 100%; 
+}
+.tag-size-3 {
+  color: red;
+  font-size: 150%;
+
+}
