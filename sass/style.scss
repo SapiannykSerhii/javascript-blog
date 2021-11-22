@@ -133,6 +133,7 @@ body {
   }
 }
 .list.tags {
+  
   li {
     display: inline;
     padding: 3px;
@@ -141,27 +142,21 @@ body {
     }
   }
 }
-.tag-size-10 {
-  color: red;
-  font-size: 150%;
-}
-.tag-size-8 {
-
-  color: rgba(29, 201, 121, 0.767);
-  font-size: 120%;
-
-}
-.tag-size-6 {
-  color: #2665ece3;
-  font-size: 100%;
-}
 
 .tag-size-2 {
+  color: rgba(29, 201, 121, 0.767);
+  font-size: 120%;
+}
+.tag-size-1 .className {
   color: #2665ece3;
   font-size: 100%; 
 }
-.tag-size-3 {
+.tag-size-5 {
   color: red;
   font-size: 150%;
 
+}
+.tag-size-3 {
+  color: #fff;
+  font-size: 145%;
 }
